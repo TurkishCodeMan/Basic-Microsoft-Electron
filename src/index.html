@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Desktop App</title>
+  <header id="titlebar"></header>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+
+    <div class="container-right">
+      <div class="th-last"> <button id="myBtn">+</button> <!-- Trigger/Open The Modal -->
+        <hr>
+      </div>
+
+    </div>
+
+
+
+    <div class="T-header">
+      <div class="th-first">Icon</div>
+      <div class="th-sec"><input class="search" placeholder="search company email" /></div>
+
+      <div><button class="b-left">card</button><button class="b-right">list</button></div>
+
+      </tr>
+    </div>
+    <hr>
+
+    <div id="user-card-container">
+      <div id="user-cards"></div>
+    </div>
+  
+    <table class="user-table">
+      <!-- <thead>
+        <tr>
+          <td rowspan="2" class="cirkel">icon </td>
+          <td>
+            <h3>Company name</h3>
+          </td>
+          <td rowspan="2" class="dot"><button id="myBtndot">...</button></td>
+        <tr>
+          <td>
+            <h5>Email</h5>
+          </td>
+        </tr>
+      </thead> -->
+      <tbody id="user-table-body" class="scrollable-table">
+        <!-- Kullanıcılar buraya eklenecek -->
+      </tbody>
+    </table>
+    </div>
+  
+  
+  
+  
+  
+    <div id="myModal" class="modal"><!-- The Modal -->
+    <div class="modal-content"> <!-- Modal content -->
+      <span class="close">&times;</span>
+      <h1>User Registration</h1>
+      <form id="registration-form">
+        <label for="name">Company:<br />
+        <input type="text" id="name" name="name" required /></label>
+        <label for="email">Email:<br />
+        <input type="email" id="email" name="email" required /></label>
+        <label for="password">Password:<br />
+        <input type="password" id="password" name="password" required /></label>
+        
+        <input class="submit" type="submit" value="Register" />
+      </form>
+    </div>
+
+  </div>
+
+
+
+  <script defer src="renderer.js"></script>
+</body>
+
+</html>
+
+
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  // Get the button that opens the modal
+  //var btn = document.getElementById("myBtndot"); 
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal 
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
