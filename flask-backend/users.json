@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "name": "Adam",
+      "email": "adam@itema.dk",
+      "password": "Kuscali1"
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "testttt"
+    },
+    {
+      "name": "abc",
+      "email": "abvcsvs@gmail.com",
+      "password": "23432423"
+    },
+    {
+      "name": "abc",
+      "email": "abvcsvs@gmail.com",
+      "password": "23432423"
+    },
+    {
+      "name": "test",
+      "email": "teset@gmail.com",
+      "password": "sdfsd"
+    }
+  ]
+}
